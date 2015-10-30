@@ -1,6 +1,6 @@
 ## **Proyecto de infraestructura virtual junto con desarrollo de aplicaciones para Internet** ##
 
-## **Merka** ##
+## **Hito 1: Merka** ##
 
 ### **Participantes:** ###
 
@@ -20,3 +20,9 @@ El proyecto se va a desarrollar en dos módulos, dentro de un repositorio princi
 Hemos elegido llevar a cabo este proyecto, porque se centra en la virtualización de recursos como puede ser el uso de máquinas virtuales para el despliegue de una aplicación para Internet, usando también para ello un framework de alto nivel.
 
 Estamos inscritos en el certamen de proyectos de la UGR organizado por la OSL.
+
+## **Hito 2: Merka** ##
+
+He usado el framework Django, ya que decidimos hacer la aplicación en Python.
+
+El cód
