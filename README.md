@@ -1,11 +1,13 @@
+![resultado del test](https://travis-ci.org/AngelValera/proyectoIV-Modulo-1.svg?branch=master)
+![snap-ci](https://snap-ci.com/AngelValera/proyectoIV-Modulo-1/branch/master/build_image)
 ## **Proyecto de infraestructura virtual junto con desarrollo de aplicaciones para Internet** ##
 
-## **Hito 1: Merka** ##
+### **Hito 1: Merka** ###
 
 ### **Participantes:** ###
 
-### Ángel Valera Motos  ###
-### Bogdan Alin Muresan ###
+#### Ángel Valera Motos  ####
+#### Bogdan Alin Muresan ####
 
 **Descripción:**
 
@@ -15,55 +17,75 @@ El proyecto se va a desarrollar en dos módulos, dentro de un repositorio princi
 
 **El módulo 1:**  [(Ángel Valera Motos )](https://github.com/AngelValera/proyectoIV-Modulo-1.git)Este módulo se encarga de toda la gestión de las bases de datos necesarias. Al tratarse de una tienda online necesitaremos base de datos (MySQL) replicadas, una base de datos para usuarios, para productos, etc. 
 
-**El módulo 2:** [(Bogdan Alin Muresan )](https://github.com/bogdananas/proyectoIV-modulo2.git) Este módulo se encarga del alojamiento web de la aplicación, en el servidor así como la conexión de la aplicación con las bases de datos y el despliegue de la misma.
-
 Hemos elegido llevar a cabo este proyecto, porque se centra en la virtualización de recursos como puede ser el uso de máquinas virtuales para el despliegue de una aplicación para Internet, usando también para ello un framework de alto nivel.
 
 Estamos inscritos en el certamen de proyectos de la UGR organizado por la OSL.
 
-## **Hito 2: Merka** ##
+### **Hito 2: Merka** ###
 
-He usado el framework Django, ya que decidimos hacer la aplicación en Python.
+##**Desarrollo basado en pruebas**##
+He usado el framework Django, ya que decidimos hacer la aplicación en Python, por tanto usaremos las herramientas que proporciona, siendo estas manage.py y setup.py.
 
-El código muestra una sencilla página de inicio a la cual le pasamos un test de comprobación, de manera que se irá mejorando a lo largo del desarrollo del proyecto.
+Para las pruebas, usamos el fichero [test.py](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/merka/tests.py) y para su ejecución usamos la herramienta manage.py :
 
-La automatización  se puede ver en este makefile:
+**python manage.py test** ó **python manage.py test nombreaplicacion**
 
-```
-#Makefile Angel Valera Motos
-#clean install test run doc
+Estos test se usarán tanto en el despliegue en un Paas como en la integración continua.
 
-clean:
-	- rm -rf *~*
-	- find . -name '*.pyc' -exec rm {} \;
+##**Integración continua**##
 
-install:
-	python setup.py install
+Para la integración continua he utilizado travis, ya que es el que me ha resultado más sencillo d utilizar junto con github:
 
-test:
-	python manage.py test
+Para su uso debemos indicar el repositorio que queremos testear y además generar el fichero .travis.yml [.travis.yml](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/.travis.yml) donde se indican la versión de python usada, como instalar las dependencias y como pasar los test.
 
-run:
-	python manage.py runserver
-doc:
-	epydoc --html merka2/views.py merka2/models.py
-```
-Para la interacción continua he usado travis ya que es el que usé para el desarrollo de los ejercicios del tema 2.
-El archivo travis.yml contiene lo siguiente:
+Para las dependencias se utiliza un fichero llamado [requirements.txt](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/requirements.txt) con lo necesario para ejecutar la aplicación.
 
-```
-language: python
-python:
- - "2.7"
-before_install:
- - cd merka
-# command to install dependencies
-install:
- - make install
+Para generar la documentación, se utiliza la herramienta epydoc de la siguiente manera:
 
-# command to run tests para django python
-script:
- - make tests
-```
+**epydoc --html views.py models.py**
 
-![resultado del test](https://travis-ci.org/AngelValera/proyectoIV-Modulo-1.svg?branch=master)
+Para ello debemos estar en el directorio de la aplicación, **merka**.
+
+### **Hito 3: Merka** ###
+
+##**Despliegue en un Paas Heroku**##
+
+El siguiente paso es desplegar 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
