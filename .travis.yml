@@ -2,11 +2,11 @@ language: python
 python:
  - "2.7"
 before_install:
- - cd merka
+ - cd Proyecto_Merka
 # command to install dependencies
 install:
- - make install
+ - pip install -r requirements.txt
 
 # command to run tests para django python
 script:
- - make test
+ - python manage.py test
