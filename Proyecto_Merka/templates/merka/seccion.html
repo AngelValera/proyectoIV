@@ -1,0 +1,21 @@
+{% extends "merka/base.html" %}
+
+
+{% block title %}-{{ seccion_name }}{% endblock %}
+
+{% block content %}
+ <h1>{{ seccion_name }}</h1>
+        {% if seccion %}
+            {% if productos %}
+            <ul>
+                {% for producto in productos %}
+                <li><a href="{{ producto.url }}">{{ producto.nombre }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <strong>No hay productos actualmente en esta seccion.</strong>
+            {% endif %}
+        {% else %}
+            ¡La seccion {{ seccion_name }}  no existe!
+        {% endif %}
+{% endblock %}
