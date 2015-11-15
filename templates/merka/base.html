@@ -1,0 +1,80 @@
+<!doctype html>
+
+{% load static %}
+
+<HTML lang="es">
+	<head>
+    {% block head %}
+		<meta charset="UTF-8"/>
+		<title >MerKa {% block title %}{% endblock %}</title>
+    {% endblock %}
+	</head>
+
+  <body>
+  {% block secciones %}
+  <h1 align="center">Tienda Online Merka</h1>
+  <h2>
+    Hola, soy Angel Valera Motos desarrollador de Merka, estamos trabajando aun en ello, gracias por la visita
+  </h2>
+    <p>---------------------------------------------------------------------</p>
+  <h3>
+  <b> SECCIONES </b>
+  </h3>
+  <p>---------------------------------------------------------------------</p>
+
+    <!--Botonera con las secciones de productos-->
+    <nav id="secs">
+			{% if secciones %}
+            <ul>
+                {% for seccion in secciones %}
+                <li > <a  href="seccion/{{ seccion.slug }}">  <p><b>{{ seccion.nombre }}</b></p> </a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No hay Secciones presentes.</strong>
+        {% endif %}
+      </nav>
+    {% endblock %}
+
+      <div id="content">{% block content %}{% endblock %} </div>
+
+    <!--Pie de página-->
+    {% block footer %}
+    <footer  id="pie">
+      <!--Artículo con la información de contacto-->
+      <article id="contacto">
+
+        <h3 ><b>CONTACTO</b></h3>
+
+        <ul>
+          <li><a href="mailto:angelvalera.epal@gmail.com"><b>Correo:</b> angelvalera.epal@gmail.com<br/></a></li>
+          <li><b>Creador:</b> Ángel Valera Motos<br/></li>
+          <li><b>Teléfono:</b> 958-112-233</li>
+
+        </ul>
+
+      </article>
+      <!--Artículo con el botón para inscribirse a la página -->
+      <article id="detalles">
+
+        <h3 align="center"><b>DETALLES</b></h3>
+
+        <p align="center">Esta página es una práctica para la asignatura de <abbr title="Infraestructura Virtual">IV</abbr> y<abbr title="Desarrollo de Aplicaciones para Internet">DAI</abbr>  en el <abbr title="Grado de Ingenieria Informatica">GII</abbr> de la <abbr title="Universidad de Granada">UGR</abbr>, ninguna oferta es
+              real. Gracias por su visita</p>
+
+        <a id="formulario" href="." class="borde">  <p align="center"><b>INSCRIBIRSE</b></p> </a>
+
+      </article>
+      <!--Artículo con la dirección-->
+      <article id="direccion">
+
+        <h3 align="center">DIRECCION</h3>
+
+        <address align="center"> C/ Plaza Nueva, s/n, 18858, Orce Granada </address>
+
+      </article>
+
+    </footer>
+    {% endblock %}
+  </body>
+</html>
