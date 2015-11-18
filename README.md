@@ -1,5 +1,6 @@
 ![resultado del test](https://travis-ci.org/AngelValera/proyectoIV-Modulo-1.svg?branch=master)
 ![snap-ci](https://snap-ci.com/AngelValera/proyectoIV-Modulo-1/branch/master/build_image)
+
 ## **Proyecto de infraestructura virtual junto con desarrollo de aplicaciones para Internet** ##
 
 ### **Hito 1: Merka** ###
@@ -134,7 +135,7 @@ Ahora añadimos integracion continua con Snap-ci, para ello seleccionamos el rep
 
 con esto cada vez que hagamos push  nos pasará los test y si son satisfactorios desplegará la aplicación.
 
-
+La aplicación podemos verla funcionando [aquí](https://proyecto-merka.herokuapp.com/).
 
 
 
