@@ -7,6 +7,6 @@ setup(name='merka',
     author='Angel Valera Motos',
     author_email='angelvalera.epal@gmail.com',
     license='MIT',
-    packages=['merka'],
+    packages=['app'],
     install_requires=['django','wheel'],
     zip_safe=False)

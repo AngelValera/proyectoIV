@@ -25,7 +25,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('merka.urls')),
+    url(r'^', include('app.urls')),
 )
 if settings.DEBUG:
     urlpatterns += patterns(
