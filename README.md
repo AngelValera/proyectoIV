@@ -1,5 +1,4 @@
 ![resultado del test](https://travis-ci.org/AngelValera/proyectoIV-Modulo-1.svg?branch=master)
-
 ![snap-ci](https://snap-ci.com/AngelValera/proyectoIV-Modulo-1/branch/master/build_image)
 
 ## **Proyecto de infraestructura virtual junto con desarrollo de aplicaciones para Internet** ##
