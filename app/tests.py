@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from django.test import TestCase
-from merka.models import Seccion, Producto
+from app.models import Seccion, Producto
 from django.core.urlresolvers import reverse
 
 # Create your tests here.
