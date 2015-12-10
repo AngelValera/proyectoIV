@@ -2,6 +2,7 @@
 
 ![snap-ci](https://snap-ci.com/AngelValera/proyectoIV-Modulo-1/branch/master/build_image)
 
+#**MERKA:TIENDA ONLINE**#
 ## **Proyecto de infraestructura virtual junto con desarrollo de aplicaciones para Internet** ##
 
 **Descripción:**
@@ -15,13 +16,25 @@ El proyecto se va a desarrollar en dos módulos, dentro de un repositorio princi
 Hemos elegido llevar a cabo este proyecto, porque se centra en la virtualización de recursos como puede ser el uso de máquinas virtuales para el despliegue de una aplicación para Internet, usando también para ello un framework de alto nivel.
 
 **Estamos inscritos en el certamen de proyectos de la UGR organizado por la OSL.**
+##**Herramienta de Construcción**##
+He usado el framework Django, ya que decidimos hacer la aplicación en Python, por tanto usaremos las herramientas que proporciona, siendo estas manage.py y setup.py.
 
+Además se añaden los archivos **docker.sh**, **heroku.sh** y **ejecutar_App.sh** para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
+
+##**Instalación local de la aplicación**##
+
+Tenemos que ejecutar lo siguiente:
+
+```
+git clone https://github.com/AngelValera/proyectoIV-Modulo-1.git
+cd proyectoIV-Modulo-1
+python manage.py migrate
+python manage.py runserver
+```
 
 
 ##**Desarrollo basado en pruebas**##
-He usado el framework Django, ya que decidimos hacer la aplicación en Python, por tanto usaremos las herramientas que proporciona, siendo estas manage.py y setup.py.
-
-Para las pruebas, usamos el fichero [test.py](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/merka/tests.py) y para su ejecución usamos la herramienta manage.py :
+Para las pruebas, usamos el fichero **[test.py](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/merka/tests.py)** y para su ejecución usamos la herramienta manage.py :
 
 **python manage.py test** ó **python manage.py test nombreaplicacion**
 
@@ -43,9 +56,13 @@ La aplicación podemos verla funcionando [aquí](https://proyecto-merka.herokuap
 [Más Información](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Documentacion/PAAS.md)
 
 
+##**Entorno de pruebas**##
 
+Para el entorno de pruebas se ha utilizado Docker el cual está basado en un sistema de contenedores. Para su uso, he creado una imagen basada en Ubuntu la cual tiene la aplicación MerKa descargada y preparada para su ejecución y la cual puede ser obtenida con una sola orden desde DockerHub. [Imagen en DockerHub](https://hub.docker.com/r/angelvalera/proyectoiv-modulo-1/)
 
+[Más Información](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Documentacion/docker.md)
 
+##**MEJORAS**##
+Este es un apartado para facilitar la corrección de la práctica, en el que se indican las mejoras que se han añadido a la aplicación en este nuevo hito.
 
-
-
+[MEJORAS]()
