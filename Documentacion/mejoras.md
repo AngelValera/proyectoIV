@@ -4,9 +4,7 @@
 
 * Utilización de PostgreSQL en Heroku.
 
-S* e crea una imagen de un sistema Ubuntu conteniendo la aplicación en [DockerHub](https://hub.docker.com/r/angelvalera/proyectoiv-modulo-1/).
-
-* Se añade un script que permite instalar Docker, descargar y lanzar la imagen de la aplicación,[docker.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/docker.sh).
+* Se crea una imagen de un sistema Ubuntu conteniendo la aplicación en [DockerHub](https://hub.docker.com/r/angelvalera/proyectoiv-modulo-1/).
 
 * Se añade un script que permite desplegar la aplicación en Heroku, [heroku.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/heroku.sh).
 
@@ -15,3 +13,5 @@ S* e crea una imagen de un sistema Ubuntu conteniendo la aplicación en [DockerH
 * Se añade a la aplicación secciones de productos y articulos a esos productos, que están en la base de datos.
 
 * Se añaden nuevos [test](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/merka/tests.py) para comprobar la creación de nuevos productos y secciones, así como la comprobación de que lo que muestra el template index.html con secciones y sin secciones es correcto.
+
+* Se añade un script que permite instalar Docker, descargar y lanzar la imagen de la aplicación,[docker.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/docker.sh).
