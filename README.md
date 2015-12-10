@@ -65,4 +65,4 @@ Para el entorno de pruebas se ha utilizado Docker el cual está basado en un sis
 ##**MEJORAS**##
 Este es un apartado para facilitar la corrección de la práctica, en el que se indican las mejoras que se han añadido a la aplicación en este nuevo hito.
 
-[MEJORAS]()
+[MEJORAS](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Documentacion/mejoras.md)
