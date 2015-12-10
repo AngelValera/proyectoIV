@@ -32,7 +32,7 @@ Estos test se usarán tanto en el despliegue en un Paas como en la integración 
 Para la integración continua he utilizado travis, ya que es el que me ha resultado más sencillo de utilizar junto con github:
 
 
-[Más Información]()
+[Más Información](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Documentacion/IntCont.md)
 
 ##**Despliegue en un Paas Heroku**##
 
@@ -40,7 +40,7 @@ El siguiente paso es desplegar nuestra aplicación en un Paas, he utilizado hero
 
 La aplicación podemos verla funcionando [aquí](https://proyecto-merka.herokuapp.com/).
 
-[Más Información]()
+[Más Información](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Documentacion/PAAS.md)
 
 
 
