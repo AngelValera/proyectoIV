@@ -28,12 +28,13 @@ Ahora podemos descargarla y ejecutarla:
 
 * Para iniciar la imagen y ejecutar la aplicación:
 
-**```
- sudo docker run -i -t angelvalera/proyectoiv-modulo-1 /bin/bash
-cd /proyectoiv-modulo-1/
-ifconfig
-python manage.py runserver 0.0.0.0:2222 &
-```**
+**```sudo docker run -i -t angelvalera/proyectoiv-modulo-1 /bin/bash```**
+
+**```cd /proyectoiv-modulo-1/```**
+
+**```ifconfig```**
+
+**```python manage.py runserver 0.0.0.0:2222 &```**
 
 Una vez que sabemos la ip y el puerto desde el navegador podemos acceder a ella.
 
