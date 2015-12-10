@@ -19,7 +19,7 @@ Hemos elegido llevar a cabo este proyecto, porque se centra en la virtualizació
 ##**Herramienta de Construcción**##
 He usado el framework Django, ya que decidimos hacer la aplicación en Python, por tanto usaremos las herramientas que proporciona, siendo estas manage.py y setup.py.
 
-Además se añaden los archivos **docker.sh**, **heroku.sh** y **ejecutar_App.sh** para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
+Además se añaden los archivos **[docker.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/docker.sh)**, **[heroku.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/heroku.sh)** y **[ejecutar_App.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/ejecutar_App.sh)** para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
 
 ##**Instalación local de la aplicación**##
 

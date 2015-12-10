@@ -37,7 +37,7 @@ python manage.py runserver 0.0.0.0:2222 &
 
 Una vez que sabemos la ip y el puerto desde el navegador podemos acceder a ella.
 
-Para automatizar todo este proceso, he creado un script **[docker.sh]()**, cuyo contenido es:
+Para automatizar todo este proceso, he creado un script **[docker.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/docker.sh)**, cuyo contenido es:
 
 ```
 #!/bin/bash
@@ -61,7 +61,7 @@ cd ..
 sudo python manage.py runserver 0.0.0.0:2222 &
 ```
 
-He creado otro script llamado **[ejecutar_App.sh]()**, que ejecuta la aplicación una vez que estamos dentro del direcctorio de la aplicación, por ejemplo:
+He creado otro script llamado **[ejecutar_App.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/ejecutar_App.sh)**, que ejecuta la aplicación una vez que estamos dentro del direcctorio de la aplicación, por ejemplo:
 
 ```
 ./docker.sh
