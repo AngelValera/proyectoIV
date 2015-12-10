@@ -16,10 +16,20 @@ El proyecto se va a desarrollar en dos módulos, dentro de un repositorio princi
 Hemos elegido llevar a cabo este proyecto, porque se centra en la virtualización de recursos como puede ser el uso de máquinas virtuales para el despliegue de una aplicación para Internet, usando también para ello un framework de alto nivel.
 
 **Estamos inscritos en el certamen de proyectos de la UGR organizado por la OSL.**
+
 ##**Herramienta de Construcción**##
 He usado el framework Django, ya que decidimos hacer la aplicación en Python, por tanto usaremos las herramientas que proporciona, siendo estas manage.py y setup.py.
 
 Además se añaden los archivos **[docker.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/docker.sh)**, **[heroku.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/heroku.sh)** y **[ejecutar_App.sh](https://github.com/AngelValera/proyectoIV-Modulo-1/blob/master/Scripts/ejecutar_App.sh)** para la construcción de un entorno seguro (contenedor Docker), su posterior despliegue automático en el PAAS de Heroku y el arranque de la aplicación en local.
+
+##**Estructura del proyecto**##
+Al tratarse de un proyecto en django, tenemos tres directorios principales:
+
+* **Proyecto_Merka:** que contiene lo referente al proyecto.
+
+* **merka:** que contiene los ficheros referentes a nuestra aplicación y que usa a su vez los del fichero "Proyecto_Merka"
+
+* **templates/merka:** Contiene los templates que usa la aplicación merka. 
 
 ##**Instalación local de la aplicación**##
 
